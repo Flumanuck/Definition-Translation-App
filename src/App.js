@@ -6,7 +6,7 @@ function App() {
   const [translation, setTranslation] = useState("");
   const [definition, setDefinition] = useState("");
   const handleChange = (event) => {
-    setWord(event.target.value);
+    setWord(event.target.value.toLowerCase());
   };
 
   const define = async () => {
