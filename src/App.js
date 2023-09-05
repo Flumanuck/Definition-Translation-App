@@ -26,7 +26,7 @@ function App() {
   const translate = async () => {
     if (word) {
       const response = await fetch(
-        `https://j4col9yg8j.execute-api.us-east-2.amazonaws.com/initial/Translator?word=${word}`,
+        `https://5jhr175vce.execute-api.us-east-2.amazonaws.com/First?word=${word}`,
         { mode: "cors" }
       );
       const data = await response.json();
