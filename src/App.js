@@ -12,7 +12,7 @@ function App() {
   const define = async () => {
     if (word) {
       const response = await fetch(
-        `https://5jhr175vce.execute-api.us-east-2.amazonaws.com/First/definition?word=${word}`,
+        `https://5jhr175vce.execute-api.us-east-2.amazonaws.com/First/definitions?word=${word}`,
         { mode: "cors" }
       );
       const data = await response.json();
@@ -27,7 +27,6 @@ function App() {
         { mode: "cors" }
       );
       const data = await response.json();
-      console.log(data);
       setTranslation(JSON.stringify(data));
     }
   };
