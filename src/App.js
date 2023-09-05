@@ -16,7 +16,7 @@ function App() {
         { mode: "cors" }
       );
       const data = await response.json();
-      setDefinition(JSON.stringify(data));
+      setDefinition(data);
     }
   };
 
@@ -27,7 +27,7 @@ function App() {
         { mode: "cors" }
       );
       const data = await response.json();
-      setTranslation(JSON.stringify(data));
+      setTranslation(data);
     }
   };
 
