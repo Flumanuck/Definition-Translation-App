@@ -4,24 +4,21 @@ import React, { useState } from "react";
 function App() {
   const [word, setWord] = useState("");
   const [translation, setTranslation] = useState("");
-  // const defineButton = document.getElementById("defineButton");
-  // const translateButton = document.getElementById("translateButton");
-  // const wordInput = document.getElementById("wordInput");
-  // const definitionResult = document.getElementById("definitionResult");
-  // const translationResult = document.getElementById("translationResult");
+  const [definition, setDefinition] = useState("");
   const handleChange = (event) => {
-    // 👇 Get input value from "event"
     setWord(event.target.value);
   };
 
-  // defineButton.addEventListener("click", async () => {
-  //   const word = wordInput.value;
-  //   if (word) {
-  //     const response = await fetch(`/define/${word}`);
-  //     const data = await response.json();
-  //     definitionResult.textContent = data.definition;
-  //   }
-  // });
+  const define = async () => {
+    if (word) {
+      const response = await fetch(
+        `https://5jhr175vce.execute-api.us-east-2.amazonaws.com/First/definition?word=${word}`,
+        { mode: "cors" }
+      );
+      const data = await response.json();
+      setDefinition(JSON.stringify(data));
+    }
+  };
 
   const translate = async () => {
     if (word) {
@@ -32,7 +29,6 @@ function App() {
       const data = await response.json();
       console.log(data);
       setTranslation(JSON.stringify(data));
-      // translationResult.textContent = data.translation;
     }
   };
 
@@ -44,11 +40,13 @@ function App() {
       <button id="translateButton" onClick={translate}>
         Translate/翻訳（ほんやく）
       </button>
-      <button id="defineButton">Define/定義（ていぎ）</button>
+      <button id="defineButton" onClick={define}>
+        Define/定義（ていぎ）
+      </button>
       <div id="resultArea">
         <h2>Results:</h2>
         <div id="translationResult">{translation}</div>
-        <div id="definitionResult"></div>
+        <div id="definitionResult">{definition}</div>
       </div>
     </div>
   );
