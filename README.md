@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Translation + Definition App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+- [Description](#description)
+- [Usage](#usage)
+- [Technologies-Used](#technologies-used)
+- [To-Do](#to-do)
+- [Screenshots](#screenshots)
+- [Link](#link)
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+This is an application in which the user can input any English word and get a brief definition as well as a Japanese translation.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Usage
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The user types their word of choice into the input box and clicks both or one of the provided buttons to recieve either a translation and/or a definition, depending on the button pressed.
 
-### `npm test`
+## Technologies-Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Frontend:
 
-### `npm run build`
+  - JavaScript
+  - CSS
+  - HTML
+  - This app was bootstrapped with create-react-app
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Backend:
+  - Lambda Python for backend functionality
+  - RESTful API Gateway for communication
+  - Flask for path handling
+  - Requests library for making API calls
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## To-Do
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Add Japanese to English functionality
+- Add definitions in Japanese
+- Possibly combine functions to a single button for ease of use
 
-### `npm run eject`
+## Screenshots
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Tranlation+Definition App Screenshot](docs/Translation-app-screenshot.JPG)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Link
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Link to Translation and Definition App](https://main.d916lbd27q0kh.amplifyapp.com/)
