@@ -36,16 +36,18 @@ function App() {
       <h1>Translation and Definition App</h1>
       <label for="wordInput">Enter a word/言葉を入れて下さい:</label>
       <input type="text" id="wordInput" onChange={handleChange} />
-      <button id="translateButton" onClick={translate}>
-        Translate/翻訳（ほんやく）
-      </button>
-      <button id="defineButton" onClick={define}>
-        Define/定義（ていぎ）
-      </button>
+      <div className="button-container">
+        <button id="translateButton" onClick={translate}>
+          Translate/翻訳（ほんやく）
+        </button>
+        <button id="defineButton" onClick={define}>
+          Define/定義（ていぎ）
+        </button>
+      </div>
       <div id="resultArea">
         <h2>Results:</h2>
-        <div id="translationResult">{translation}</div>
-        <div id="definitionResult">{definition}</div>
+        <div id="translationResult">Translation: {translation}</div>
+        <div id="definitionResult">Definition: {definition}</div>
       </div>
     </div>
   );
